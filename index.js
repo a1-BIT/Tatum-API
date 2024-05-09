@@ -20,6 +20,10 @@ app.get("/createTronWallet", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.status(200).json({ mag: "Success", status: 1 });
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
